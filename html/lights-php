@@ -1,0 +1,13 @@
+<?php
+include('Data_Base_connection.php');
+
+
+system("gpio -g mode 4 out");
+system("gpio -g write 4 1");
+$sql = "UPDATE lights SET state_light='ON'  WHERE description_light='Living Room Lighting'";
+mysqli_query($conn, $sql);
+
+echo "yess";
+
+?>
+

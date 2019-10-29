@@ -1,0 +1,24 @@
+import sys
+import wolframalpha 
+
+def wolframalphaa(input):
+ 	try:
+  
+            app_id = "KW39JQ-337WU9HGPY" 
+            client = wolframalpha.Client(app_id) 
+            res=client.query(input) 
+            answer = next(res.results).text
+            
+      	    print(answer)
+	except:
+	    print(answer)	
+length=le1n(sys.argv)
+chainfinale=""
+for i in range(1,length):
+	chain=(sys.argv[i])
+
+	chainfinale=chainfinale+" "+chain
+
+
+    
+wolframalphaa(chainfinale)  
